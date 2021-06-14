@@ -1,0 +1,257 @@
+html, body{ height: 100%; width: 100%; margin: 0;}
+
+html{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #eaffd0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    }
+
+/*header css*/
+header{
+    background-color: #cc9b6d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80%;
+}
+
+#title{
+   font-weight: bold;    
+}
+
+#logo {
+    height: 60px;
+    padding-bottom: 10px;
+}      
+
+.active {
+    background-color: #d1ab69;
+    color: black;
+    font-weight: 600;
+}
+
+/*nav bar css */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1ca89;
+  }
+  
+li {
+    float: left;
+    border-right:1px solid #cab155;
+    font-size: 16px;
+}
+  
+li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: #c79668;
+    color: whitesmoke;
+    font-weight: 600;
+  }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#search-field{
+    transition: 0.5s;
+    }
+
+#search-field:hover{
+    width: 80%;
+    border-radius: 20px;
+}
+
+/* main part */
+
+#main{
+    width:100%;
+    height: 88.2%;
+    overflow: auto;
+}
+
+#trips {
+    min-height: 100%;
+    background-color: #f2dac3ce;
+}
+
+.trip{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #cc9b6dad;
+    height: 12rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.trip:hover {
+    transform:  translateY(-0.5%);
+    box-shadow: 0 1vh 1vh rgba(0, 0, 0, 0.5);
+}
+
+.trip_img{
+    height: 85%;
+    margin-top: 2%;
+}
+
+.trip_txt{
+    margin-left: 40px;
+    width: 20rem;
+}
+
+.trip_btns{
+    height: 100%;
+    position: relative;
+    width: 60px;
+}
+
+.btn {
+    margin-bottom: 15%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #f2dac3;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: #382a1dfa;
+    color: white;
+    border-radius: 25px;
+    transform:  translateY(-0.5%);
+    box-shadow: 0 0.8vh 0.8vh rgba(0, 0, 0, 0.5);
+}
+
+.btn i{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+[class*="left"] {
+    float: left;
+}
+
+/* size for elements */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+header{
+    font-size: 100%;
+}
+
+#logo {
+  height: 80px;
+  padding-bottom: 10px;
+}
+
+#main{
+    width:100%;
+    height: 86.2%;
+}
+
+#trips{
+    margin-left: 17%;
+    margin-right: 17%;
+}
+
+
+.trip{
+    margin: 40px;
+}
+
+
+
+.col-s-1 { width: 8.33%; }
+  .col-s-2 { width: 16.66%; }
+  .col-s-3 { width: 25%; }
+  .col-s-4 { width: 33%; }
+  .col-s-5 { width: 41.66%; }
+  .col-s-6 { width: 50%; }
+  .col-s-7 { width: 58.33%; }
+  .col-s-8 { width: 66.66%; }
+  .col-s-9 { width: 75%; }
+  .col-s-10 { width: 83.33%; }
+  .col-s-11 { width: 91.66%; }
+  .col-s-12 { width: 100%; }
+}
+  
+  
+@media only screen and (min-width: 992px) {
+
+header{
+    font-size: 100%;
+}
+
+#logo {
+  height: 100px;
+  padding-bottom: 10px;
+} 
+
+#main{
+    width:100%;
+    height: 84.2%;
+}
+
+#trips{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.trip{
+    margin: 50px;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+}
