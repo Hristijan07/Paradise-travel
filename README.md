@@ -45,3 +45,11 @@ Technologies used for this project were:
 - jQuery
 - Ajax
 - Leaflet library
+
+## Other
+If you import the database, you already have 4 existing users:
+ - __username : password__:
+    - batman : ilovebats
+    - joeW111 : testpasswd
+    - superman007: stvaje
+    - admin : admin
